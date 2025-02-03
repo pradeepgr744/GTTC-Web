@@ -89,13 +89,25 @@
 
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
-    padding: 25px 0;
+    padding: 25px 30px;
     color: #FFFFFF;
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
+    
+}
+.logorotate{
+animation: rotatelogo 0.8s  linear; ;
 }
 
+@keyframes rotatelogo {
+    0% {
+      transform: rotate(200deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--primary);
@@ -366,8 +378,22 @@
     background: var(--primary);
     border-color: var(--primary);
 }
-
-
+/* Not found */
+.errorlogo{
+    margin: 20px;
+    animation: rotate 2s infinite linear;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 /*** Footer ***/
 .footer .btn.btn-social {
     margin-right: 5px;
@@ -427,7 +453,10 @@
     padding-right: 15px;
     border-right: 1px solid rgba(255, 255, 255, .1);
 }
-
+.footermenu{
+    display: flex;
+    justify-content: space-around;
+}
 .footer .footer-menu a:last-child {
     margin-right: 0;
     padding-right: 0;
