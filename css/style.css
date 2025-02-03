@@ -178,7 +178,9 @@ animation: rotatelogo 0.8s  linear; ;
         object-fit: cover;
     }
 }
-
+.headtxt{
+    font-size: xx-large;
+}
 .header-carousel .owl-nav {
     position: absolute;
     top: 50%;
