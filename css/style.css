@@ -21,7 +21,10 @@
     z-index: 99;
 }
 
-
+.Application{
+    display: flex;
+    justify-content: center;
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
